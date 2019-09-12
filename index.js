@@ -1,6 +1,8 @@
 const Telegraf = require('telegraf');
 const Markup = require('telegraf/markup');
 
+require('dotenv').config();
+
 const { getWords, sendWords, wordsToMessage } = require('./helpers');
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
